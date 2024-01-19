@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Técnico Demo</title>
+    <style>
+      #map {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      #info {
+        z-index: 2;
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 10px;
+        padding: 5px 20px;
+        font-family: monospace;
+        background-color: rgba(232, 232, 232, .5);
+      }
+      #loading {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: monospace;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(232, 232, 232, .5);
+      }
+    </style>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="module" src='app.jsx'></script>
+  </body>
+</html>
